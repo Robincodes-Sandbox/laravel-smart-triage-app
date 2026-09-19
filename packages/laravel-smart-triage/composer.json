@@ -1,6 +1,6 @@
 {
     "name": "solarise/laravel-smart-triage",
-    "description": "Triage Eloquent records with TypeSafe Jev: urgency bands that carry their own deadline, routing, escalation flags and a confidence gate, from one request.",
+    "description": "Semantic triage for Eloquent records: urgency bands that carry their own SLA deadline, routing to a taxonomy, escalation flags and a confidence gate, all from one request.",
     "keywords": [
         "laravel",
         "eloquent",
