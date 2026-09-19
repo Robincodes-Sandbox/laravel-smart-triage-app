@@ -1,0 +1,9 @@
+{
+  "live": false,
+  "project": "laravel-smart-triage",
+  "type": "laravel",
+  "deploy_path": "/srv/solarise/projects/laravel-smart-triage/current",
+  "shared_path": "/srv/solarise/projects/laravel-smart-triage/shared",
+  "build": "composer install --no-dev --optimize-autoloader --no-interaction",
+  "post_deploy": "ln -sfn ../shared/.env .env && touch ../shared/database.sqlite && ln -sfn ../../shared/database.sqlite database/database.sqlite && php artisan migrate --force && php artisan db:seed --force && php artisan config:cache && php artisan route:cache"
+}

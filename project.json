@@ -1,0 +1,15 @@
+{
+    "title": "Laravel Smart Triage",
+    "description": "A Laravel package that gives Eloquent records semantic triage from one model call: urgency bands carrying their own SLA deadline, routing to a taxonomy, escalation flags, and a confidence gate that separates policy escalation from the model admitting it is unsure. Written against a Judge contract so the model underneath can be swapped. The demo is a repairs service for 50,000 homes where switching the weather re-ranks the queue.",
+    "tags": [
+        "laravel",
+        "php",
+        "triage",
+        "typesafe",
+        "jev",
+        "ai",
+        "eloquent"
+    ],
+    "color": "#b7520a",
+    "status": "active"
+}

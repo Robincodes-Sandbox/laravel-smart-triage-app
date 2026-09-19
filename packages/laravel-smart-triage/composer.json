@@ -1,0 +1,63 @@
+{
+    "name": "solarise/laravel-smart-triage",
+    "description": "Triage Eloquent records with TypeSafe Jev: urgency bands that carry their own deadline, routing, escalation flags and a confidence gate, from one request.",
+    "keywords": [
+        "laravel",
+        "eloquent",
+        "triage",
+        "typesafe",
+        "jev",
+        "ai",
+        "sla"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Metcalfe",
+            "homepage": "https://solarise.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0|^13.0",
+        "illuminate/database": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/support": "^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solarise\\SmartTriage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Solarise\\SmartTriage\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Solarise\\SmartTriage\\SmartTriageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": false
+        }
+    },
+    "support": {
+        "issues": "https://github.com/Robincodes-Sandbox/laravel-smart-triage/issues",
+        "source": "https://github.com/Robincodes-Sandbox/laravel-smart-triage"
+    }
+}
