@@ -269,10 +269,10 @@ is 1,200 requests a minute, which works out at roughly 1.7 million records a day
 
 The screenshot above comes from a working demo: a repairs service with 50,000 homes and 40 open
 reports. The source is in
-[the demo repository](https://github.com/Robincodes-Sandbox/laravel-smart-triage-demo).
+[the demo repository](https://github.com/Robincodes-Sandbox/laravel-smart-triage-app).
 
 ```bash
-git clone https://github.com/Robincodes-Sandbox/laravel-smart-triage-demo
+git clone https://github.com/Robincodes-Sandbox/laravel-smart-triage-app
 composer install
 php artisan migrate --seed
 php artisan triage:run "App\Models\RepairReport"

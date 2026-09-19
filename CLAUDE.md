@@ -10,7 +10,7 @@ Develop here; the package is split out to its own repo so people can install it.
 
 | Remote | Repo | What it holds |
 |---|---|---|
-| `origin` | `laravel-smart-triage-demo` | this whole folder — the demo app, deployable |
+| `origin` | `laravel-smart-triage-app` | this whole folder — the demo app, deployable |
 | `package` | `laravel-smart-triage` | `packages/laravel-smart-triage/` only, Packagist-shaped |
 
 Push the package with a subtree split, never by copying files:
