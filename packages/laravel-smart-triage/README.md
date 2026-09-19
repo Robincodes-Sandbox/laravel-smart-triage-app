@@ -15,11 +15,22 @@ single triage declaration.
 
 ## Install
 
+The package is not on Packagist yet, so point Composer at the repository:
+
+```json
+"repositories": [
+    { "type": "vcs", "url": "https://github.com/Robincodes-Sandbox/laravel-smart-triage" }
+]
+```
+
 ```bash
-composer require solarise/laravel-smart-triage
+composer require solarise/laravel-smart-triage:^0.1
 php artisan vendor:publish --tag=smart-triage-migrations
 php artisan migrate
 ```
+
+Once it is registered on Packagist, drop the `repositories` block and the plain
+`composer require solarise/laravel-smart-triage` works.
 
 Add your key to `.env`. Keep it server-side and never put it in a browser bundle:
 
